@@ -29,7 +29,7 @@
 \begin{aside}
     ~
   \section{Tel \& Skype}
-    +1 765 4125659
+    +86 131 2299 0862
     yuchen.huang.purdue
     ~
   \section{Mail}
@@ -39,38 +39,30 @@
 	\textbf{Machine Learning  }
 	\textbf{Artificial Intelligence  }
 	\textbf{Web Developing  }
-	\textbf{Android Developing  }
-	\textbf{Data Mining  }
-	\textbf{Embedded System  }  	
+	\textbf{Embedded System(IOT)  }  	
 	~  	
-  \section{Skill Set}
+  \section{Languages}
     \textbf{Python  }\includegraphics[scale=0.07]{img/3heart.png}
     \textbf{Java  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{C\# .net  }\includegraphics[scale=0.07]{img/3heart.png}
     \textbf{HTML/CSS  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{Linux  }\includegraphics[scale=0.07]{img/2heart.png}
     \textbf{Javascript  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{SQL  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{Android  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{GAppEngine  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{Octave  }\includegraphics[scale=0.07]{img/1heart.png}
-    \textbf{Ruby Rails  }\includegraphics[scale=0.07]{img/1heart.png}  
-    \textbf{C  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{SAS  }\includegraphics[scale=0.07]{img/2heart.png}
     \textbf{Bash  }\includegraphics[scale=0.07]{img/1heart.png}  
     \textbf{Latex  }\includegraphics[scale=0.07]{img/1heart.png}
-    \textbf{jQuery  }\includegraphics[scale=0.07]{img/2heart.png}
-    \textbf{Ajax  }\includegraphics[scale=0.07]{img/2heart.png}  
-    \textbf{Django  }\includegraphics[scale=0.07]{img/1heart.png}
-    \textbf{R  }\includegraphics[scale=0.07]{img/1heart.png}
     ~
-  \section{Web \& Git}
-    \href{http://www.yuchen.us}{yuchen.us}
+  \section{Toolbox}
+  	\textbf{Spring[Boot]}
+  	\textbf{Tornado}
+  	\textbf{Hystrix}
+  	\textbf{ElasticSearch}
+  	\textbf{React/Redux}
+  	\textbf{Angular}
+  	\textbf{AKKA}
+  	\textbf{RabbitMQ}
+  	\textbf{Zookeeper}
+    \textbf{Linux  }\includegraphics[scale=0.07]{img/2heart.png}
+    ~
+  \section{Git}
     \href{https://github.com/huang475}{github.com/huang475}
-    ~
-  \section{Address}
-    152 West End Circle
-    Verona, WI, US 53593
     ~
 \end{aside}
 ~
@@ -79,55 +71,21 @@
 \section{Experience}
 \begin{entrylist}
   \entry
+  	{3/15 - Now}
+  	{DevOps Engineer}
+  	{Ele.me}
+  	{\textbf{CMDB} \textbf{Leader} CMDB is a database for configuration management. It's based on ElasticSearch for easy search and live structure change. Use RabbitMQ for message driven task execution. We also implement Transaction on top of ES, a raw-level lock based on Zookeeper. Also functionality like Trigger and UDF. Though CMDB mainly acts as a rest service, We use React/Redux to construct the Front-end page for easy data lookup. }
+  	{\textbf{Operation Centre (EOC)} \textbf{Member} EOC is a job execution framework. The functionality is like SaltStack but supports common language like python, bash for script define. We use zookeeper to support the scalability of core-service. The core-service is written in Python(tornado). }
+  	{\textbf{CI/CD System (ELESS)} \textbf{Member} ELESS is a CI/CD system integrating with GitLab/GitHub ,Jenkins, EOC and CMDB. I am responsible for the deployment part. It's basically a gateway service to EOC and CMDB, written in JAVA, mainly in spring[boot]. I use Hystrix for degrading, circuit-breaking and monitoring. And Mysql for some metadata storage. I use persist cache in Redis for degrading is the funny part ... }
+  	{\textbf{CMDB Python SDK} \textbf{Alone} It's a small project. I mention it because it's the time I found the awesomeness of Python. It's acting like a ORM, using structure information from CMDB to construct all kinds of Class on the fly.  And it's also the time I notice the importance of API design... }
+  	{\textbf{Two Web apps for the Gateway Service I mention above} Both in React/Redux. One is for System admin to do some urgent jobs bypass Eless. The other is the data visualisation of info about all the deployments, charts in Plotly.js. I use some product-ready Material Design / Ant Design components. And I did write a bunch of CSS ... }
+  	{\textbf{DBM} \textbf{Alone} It's a mysql management system. Privileges management. Self-define, live edit and manage extra meta info for databases, tables and columns.  Data exploration. Operation tasks scheduling and execution. SQL review workflow. Built with AngularJS, Python(tornado) and ElasticSearch. }
+  	{\textbf{DEPLOY}}
+  \entry
     {10/14 - 02/15}
     {Software Developer}
     {Epic Systems Corp., Verona, WI, U.S.}
-    {\textbf{Web Developing} Working on internal learning and testing web application: Blackboard under C\# .net framework. \\}
-  \entry
-    {08/14 - 12/14}
-    {Android Development}
-    {Purdue University, West Lafayette}
-    {\textbf{Sunshine} Implemented a weather application using Android Studio and Android application framework.\\}
-  \entry
-    {08/14 - 12/14}
-    {Web Development}
-    {Purdue University, West Lafayette}
-    {\textbf{Personal Website} Built personal website using Bootstrap under Google webapp2 python framework, but hosted on AWS EC2.}
-  \entry
-  	{04/14 - 08/14}
-  	{Data Analysis}
-  	{Purdue University, West Lafayette}
-  	{\textbf{Spam Filter} Built a spam email predictor using Octive with Logistic regression and Bayes' network.\\} 
-  \entry
-  	{06/14 - 08/14}
-  	{Data Analysis}
-  	{Purdue University, West Lafayette}
-  	{\textbf{Rent Rate Analysis} Applied regression analysis on rent data for planting land using SAS.\\} 
-  \entry
-    {03/14 - 06/14}
-    {Software Design}
-    {Purdue University, West Lafayette}
-    {\textbf{Web Parser} Using Python, Google and Bing search API to fetch and collect massive information about public cameras.\\}
-  \entry
-    {01/14 - 05/14}
-    {System Design}
-    {Purdue University, West Lafayette}
-    {\textbf{Housekeeper} Implemented a face recognition system under MVC pattern. The system use OpenCV running in Raspberry Pi for home security and auto power management.\\}
-  \entry
-  	{08/13 - 12/13}
-  	{Software Design}
-  	{Purdue University, West Lafayette}
-  	{\textbf{Lisp Compiler} The compiler was designed in C using flex/bison as LL(1) parser, with local and global optimization.\\} 
-%  \entry
-%  	{08/13 - 12/13}
-%  	{Cache Implementation}
-%  	{Purdue University, West Lafayette}
-%  	{\textbf{Dead-Block Predictor} Implementing dead block prediction replacing LRU policy in L2 and L3 caches in OOO CPU using GEM5 simulator.\\} 
-%  \entry
-%  	{12/12 - 05/13}
-%  	{Hardware Design}
-%  	{Purdue University, West Lafayette}
-%  	{\textbf{ASIC Design} Designed and tested (via test benches) CAM, UART, SPI and I2C transmitters using System Verilog, Cadence, Synopsys and ModelSim.Performed synthesis, simulations, static timing analysis and physical implementation.\\} 
+    {\textbf{Web Developing} Working on internal learning web application: Blackboard under C\# .net. \\}
 \end{entrylist}
 ~
 ~
